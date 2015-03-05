@@ -1,28 +1,20 @@
-== README
+== BootCamp Boards
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The BC Boards is a web application that allows current students and alumni from coding bootcamps, to connect, network, attend events, and collaborate on projects. The BC Boards were born out of a need to have a platform for bootcamp students to better interact with one another and more easily outreach to alumni. 
 
 Things you may want to cover:
 
-* Ruby version
+* When users join the BC Boards site, they will be directed to a feed page that will render four categories: 'Explore', 'Events', 'Get Hired', and "Boards". Each category will have a list of 4-5 items and a 'See More' button that will direct users to each catgegory's page
 
-* System dependencies
+* If a user clicks on the the 'See More' button in the Explore category, they will be directed to the Explore page. This page will render for new categories (Groups, Co-Founders, ---. ---) 
 
-* Configuration
+* If a user clicks on 'See more' under the Events category, they will directed to a page that lists events that they can click on and pay to attend using their venmo accounts. 
 
-* Database creation
+* When users click on the 'See More' button under the Get Hired category they will be directed to a page that lists different articles regarding getting hired as a junior dev. 
 
-* Database initialization
+* Lastly, if users click on the 'See More' button under the Get Hired category, they will be directed to a page that lists boards that they can click read, and comment on. 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Users can also edit their profile pages where they can upload pictures, portfolios, edit their resumes imported from linkedin, and identify themselves as collaborator seekers. 
 
 * ...
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
