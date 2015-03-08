@@ -1,6 +1,8 @@
 class CreateFriendUsers < ActiveRecord::Migration
   def change
     create_table :friend_users do |t|
+    	t.references :users
+    	t.references :users 
 #     	# friend_users.friend_id
 #     	add_foreign_key :users, :users, column: :friend_id, primary_key: :ujhhh
     end

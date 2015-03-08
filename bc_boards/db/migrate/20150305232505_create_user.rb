@@ -11,6 +11,8 @@ class CreateUser < ActiveRecord::Migration
     	t.references :groups
     	t.references :articles
     	t.references :events
+    	t.integer 	 :home_visits
     end
   end
 end
+	

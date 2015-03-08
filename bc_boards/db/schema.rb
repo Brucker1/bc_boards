@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20150307012253) do
   end
 
   create_table "friend_users", force: :cascade do |t|
+    t.integer "users_id"
   end
 
   create_table "groups", force: :cascade do |t|
@@ -35,10 +36,17 @@ ActiveRecord::Schema.define(version: 20150307012253) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string  "picture_url"
+    t.string  "first_name"
+    t.string  "last_name"
+    t.string  "location"
+    t.string  "positions"
+    t.string  "headline"
     t.integer "messages_id"
     t.integer "groups_id"
     t.integer "articles_id"
     t.integer "events_id"
+    t.integer "home_visits"
   end
 
   create_table "users_groups", force: :cascade do |t|
