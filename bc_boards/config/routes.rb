@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  root 'welcome#index'
+  get '/home' => 'home#index'
+  get '/linkedin/oauth_callback' => 'session#create'
+  delete '/signout' => 'session#destroy'
+
+  resources :user
+  resources :events
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +61,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
 end
