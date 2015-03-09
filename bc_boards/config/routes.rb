@@ -7,10 +7,12 @@ Rails.application.routes.draw do
 
 
   resources :users do 
-    resources :messages 
+    resources :messages
+    get '/requests' => 'requests#index' 
   end 
 
   resources :events 
+
 
   resources :groups do 
     resources :posts 
