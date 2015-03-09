@@ -6,6 +6,7 @@ class HomeController < ApplicationController
           "Authorization" => "Bearer #{session[:access_token]}"
         }
       )
+		binding.pry
 
 
 	end 

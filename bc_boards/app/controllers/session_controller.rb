@@ -5,7 +5,7 @@ class SessionController < ApplicationController
         :body => {
           :grant_type     => "authorization_code",
           :code           => params[:code],
-          :redirect_uri   => "http://localhost:/linkedin/oauth_callback",
+          :redirect_uri   => "http://localhost:3000/linkedin/oauth_callback",
           :client_id      => ENV["Linkedin_Oauth_API_Key"],
           :client_secret  => ENV["Linkedin_Oauth_Secret_Key"]
         },
@@ -15,6 +15,7 @@ class SessionController < ApplicationController
       )
       # save the access token for whenever we need it!
       session[:access_token] = response["access_token"]
+      
       redirect_to '/home'
 
 	end 

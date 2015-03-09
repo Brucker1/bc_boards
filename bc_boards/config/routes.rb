@@ -5,8 +5,18 @@ Rails.application.routes.draw do
   get '/linkedin/oauth_callback' => 'session#create'
   delete '/signout' => 'session#destroy'
 
-  resources :user
-  resources :events
+
+  resources :users do 
+    resources :messages 
+  end 
+
+  resources :events 
+
+  resources :groups do 
+    resources :posts 
+
+  end 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

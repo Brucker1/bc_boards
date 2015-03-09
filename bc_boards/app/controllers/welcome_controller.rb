@@ -4,8 +4,9 @@ class WelcomeController < ApplicationController
         :response_type => "code",
         :client_id     => ENV["Linkedin_Oauth_API_Key"],
         :state         => "D8DCWLC327HVM",
-        :redirect_uri  => "http://localhost:3000/linkedin/oauth_callback"
+        :redirect_uri  => "http://localhost:3000/linkedin/oauth_callback", 
+        :scope    	   => 'r_fullprofile'
       })
-      @linkedin_auth_url = "https://www.linkedin.com/uas/oauth2/authorization?" + query_params 
+      @linkedin_auth_url = "https://www.linkedin.com/uas/oauth2/authorization?" + query_params  
     end 
 end 
