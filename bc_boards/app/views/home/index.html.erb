@@ -1,2 +1,5 @@
 <h1> This is where all features and categories will be shown </h1> 
-<h2> Hi <%= @user[:picture_url] %></h2>
+
+<% if @user[:home_visits] < 1 %>
+render_form 
+<% end %> 
