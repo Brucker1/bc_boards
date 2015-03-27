@@ -13,10 +13,11 @@ class SessionController < ApplicationController
           "Accept"        => "application/json"
         }
       )
+  
       # save the access token for whenever we need it!
       session[:access_token] = response["access_token"]
       
-      redirect_to '/home'
+      redirect_to '/users' 
 
 	end 
 

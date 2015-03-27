@@ -10,8 +10,8 @@
 <a href='/home'<button>Home</button></a> 
 <a href='/events'<button>Events</button></a>
 <a href='/users/:user_id/messages'<button>Messages</button></a>
-<a href='/users/:id' <button>Profile</button></a>
-<a href='/users/user_id/requests'<button>Requests</button></a>
+
+<a href='/users/<%= %>/requests'<button>Requests</button></a>
 
  <%=button_to 'Sign Out', '/signout', method: :delete%>
 <%= yield %>

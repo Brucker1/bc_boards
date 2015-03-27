@@ -30,6 +30,12 @@ ActiveRecord::Schema.define(version: 20150307012253) do
   end
 
   create_table "messages", force: :cascade do |t|
+    t.integer  "sender_id"
+    t.integer  "receiver_id"
+    t.string   "body"
+    t.string   "subject"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -47,6 +53,9 @@ ActiveRecord::Schema.define(version: 20150307012253) do
     t.integer "articles_id"
     t.integer "events_id"
     t.integer "home_visits"
+    t.string  "interests"
+    t.string  "collaborate"
+    t.string  "coding_school"
   end
 
   create_table "users_groups", force: :cascade do |t|

@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
   root 'welcome#index'
-  get '/home' => 'home#index'
+  get '/home' => 'users#create'
   get '/linkedin/oauth_callback' => 'session#create'
   delete '/signout' => 'session#destroy'
-
+  get '/questionnaire' => 'users#questionnaire'
 
   resources :users do 
     resources :messages

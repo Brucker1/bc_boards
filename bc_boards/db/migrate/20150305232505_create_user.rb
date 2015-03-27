@@ -11,7 +11,10 @@ class CreateUser < ActiveRecord::Migration
     	t.references :groups
     	t.references :articles
     	t.references :events
-    	t.integer 	 :home_visits
+    	t.integer 	 :home_visits 
+        t.string     :interests 
+        t.string     :collaborate 
+        t.string     :coding_school
     end
   end
 end

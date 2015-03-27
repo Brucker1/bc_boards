@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
     belongs_to :messages
     has_and_belongs_to_many :events
     has_and_belongs_to_many :groups
+    validates :id, uniqueness: true 
 end
